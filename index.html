@@ -8,20 +8,40 @@
 </head>
 <body>
     <header id="navigation-bar">
+        <title>Konversi Suhu</title>
+
         <h3 id="logo">
             <img src="https://seputarilmu.com/wp-content/uploads/2019/08/suhu.jpg" height = 50 widht = 50>
         </h3>
         <nav id="navigation"> 
-            <a href="">Lihat Hasil</a>
+            <a href="">Home</a>
             <a href="">Lihat Rumus</a>
         </nav>
     </header>
-    <div class="input-section">
-        <label for="input-field">Celcius</label>
-        <input type="number" class="input-field">
+    <div>
+        <p class="center-text">Konversi Suhu</p>
     </div>
-    <button class="my-button">Konversi</button>
-    <button class="my-button">Reset</button>
-    <button class="my-button">Reverse</button>
+    <div class="input-sectioncelsius">
+        <label for="input-celsius">Celcius</label>
+        <input type="number" class="input-celsius" placeholder = "Masukkan suhu dalam Celsius">
+    </div>
+    <button class="my-button" onclick="konversiSuhu()">Konversi</button>
+    <button class="my-button" onclick="resetForm()">Reset</button>
+    <button class="my-button" onclick="reverseKonversi()">Reverse</button>
+
+    <div class="input-sectionfahrenheit">
+        <label for="input-fahrenheit">Fahrenheit</label>
+        <input type="number" class="input-fahrenheit" placeholder = "Masukkan suhu dalam Fahrenheit">
+    </div>
+
+    <div class="input-sectionrumus">
+        <label>Keterangan</label>
+        <p class="left-text">°C = 5/9 x (°F - 32)
+            <br>
+            <br>
+            °F = 5/9 x (°F - 32)
+        </p>
+    </div>
+    <script src = "./js/script.js"></script>
 </body>
 </html>
